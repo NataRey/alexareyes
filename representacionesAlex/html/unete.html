@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting Global | Conviértete en Modelo con representaciones Alexa Reyes</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/unete.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-premium">
+        <a href="../index.html" class="logo-editorial">Representaciones Alexa Reyes<span>.</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/sobreNosotros.html">La Agencia</a></li>
+                <li><a href="../html/portafolio.html">Talento</a></li>
+                <li><a href="../html/unete.html" class="active">Unete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="form-container">
+            <div class="form-header">
+                <h2>Casting Digital</h2>
+                <p>Buscamos perfiles únicos con visión de proyección internacional y ambición de vanguardia.</p>
+            </div>
+
+            <form id="premiumCastingForm" class="luxury-form">
+                <div class="form-group-row">
+                    <div class="input-wrapper">
+                        <label>Nombre Completo</label>
+                        <input type="text" required placeholder="Ej: Elena Silva">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Correo Electrónico</label>
+                        <input type="email" required placeholder="Ej: elena@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="input-wrapper">
+                        <label>Estatura (cm)</label>
+                        <input type="number" required placeholder="Ej: 178">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Ciudad de Residencia</label>
+                        <input type="text" required placeholder="Ej: Bogotá">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label>Enlace a Portafolio o Instagram (@)</label>
+                    <input type="text" placeholder="Ej: @tu_usuario">
+                </div>
+
+                <!-- CARGA DE ARCHIVOS / COMPOSITE DRAG & DROP -->
+                <div class="input-wrapper">
+                    <label>Fotografías de Perfil / Polaroids (Máx 3 archivos)</label>
+                    <div class="file-drop-zone" id="dropZone">
+                        <p>Arrastra tus fotografías premium aquí o <span>selecciona archivos</span></p>
+                        <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                    </div>
+                    <div id="filePreviewContainer" class="preview-grid"></div>
+                </div>
+
+                <button type="submit" class="btn-submit-premium">Enviar Aplicación Alexa Reyes</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/unete.js"></script>
+</body>
+</html>

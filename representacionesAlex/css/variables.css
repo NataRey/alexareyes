@@ -1,0 +1,62 @@
+:root {
+    /* Paleta de Colores Oficial */
+    --negro-profundo: #000000;
+    --negro-alterno: #0a0a0a;
+    --dorado-elegante:#cb9ea7;
+    
+    --blanco-marfil: #F5F2EB;
+    --gris-metalico: #BFC3C9;
+    --gris-oscuro: #1a1a1a;
+
+    /* Tipografías */
+    --fuente-titulos: 'Playfair Display', 'Didot', 'Bodoni MT', serif;
+    --fuente-textos: 'Montserrat', 'Helvetica Neue', sans-serif;
+
+    /* Transiciones Cinematográficas */
+    --transicion-suave: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    --transicion-rapida: all 0.3s ease;
+}
+/*#C8A96B  #cb9ea7*/
+/* Reset Base de Alta Costura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--negro-profundo);
+    color: var(--blanco-marfil);
+    font-family: var(--fuente-textos);
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--negro-profundo);
+    animation: fadeInPage 1.2s var(--transicion-suave) forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: scale(1.01); /* Efecto sutil de zoom out editorial al cargar */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transicion-rapida);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+

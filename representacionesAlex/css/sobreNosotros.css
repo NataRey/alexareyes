@@ -1,0 +1,124 @@
+.about-main {
+    padding-top: 160px;
+    background-color: var(--negro-profundo);
+}
+
+.about-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+
+.about-header h1 {
+    font-family: var(--fuente-titulos);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 20px 0;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--dorado-elegante);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Grid de Visión */
+.vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    padding: 0 10%;
+    margin-bottom: 140px;
+}
+
+.text-block h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.text-block p {
+    color: var(--gris-metalico);
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 1.05rem;
+}
+
+.photo-blank {
+    width: 100%;
+    height: 500px;
+    background-color: #111;
+    border: 1px solid rgba(200,169,107,0.15);
+}
+
+/* Servicios Grid */
+.services-section {
+    padding: 0 10% 120px;
+}
+
+.services-section .section-title {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.services-vision {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--negro-alterno);
+    padding: 40px 30px;
+    border-top: 2px solid var(--gris-oscuro);
+    transition: var(--transicion-suave);
+}
+
+.service-card:hover {
+    border-top-color: var(--dorado-elegante);
+    transform: translateY(-5px);
+}
+
+.service-card span {
+    font-family: var(--fuente-titulos);
+    color: var(--dorado-elegante);
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.service-card p {
+    color: var(--gris-metalico);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .vision-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 600px) {
+    .services-grid { grid-template-columns: 1fr; }
+}
